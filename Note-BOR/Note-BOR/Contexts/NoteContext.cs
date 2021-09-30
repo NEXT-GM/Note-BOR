@@ -14,6 +14,6 @@ namespace Note_BOR.Contexts
         {
         }
 
-        public DbSet<Note_BOR.Models.NoteM> NoteM { get; set; }
+        public DbSet<NoteM> NoteM { get; set; }
     }
 }

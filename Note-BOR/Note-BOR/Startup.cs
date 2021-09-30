@@ -28,8 +28,7 @@ namespace Note_BOR
         {
             services.AddControllers();
 
-            services.AddDbContext<NoteContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("NoteContext")));
+            services.AddDbContext<NoteContext>(opt => opt.UseInMemoryDatabase("TestDatabase"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
