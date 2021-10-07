@@ -10,7 +10,7 @@ namespace Note_BOR.Models
         public int Id { get; set; }
 
         public string apple { get; set; }
-        public s { get; set; }
+        public string s { get; set; }
         public string g { get; set; }
 
     }
