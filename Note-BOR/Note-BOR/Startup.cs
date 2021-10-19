@@ -40,6 +40,8 @@ namespace Note_BOR
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(option => option.WithOrigins("http://localhost:8080").AllowAnyMethod().AllowAnyHeader());
+
             app.UseRouting();
 
             app.UseAuthorization();
